@@ -4,7 +4,7 @@ const app = require('./index');
 test('GET / returns a welcome message', async () => {
     const response = await request(app).get('/');
     expect(response.status).toBe(200);
-    expect(response.body.message).toBe('Hello from CI/CD Lab!');
+    expect(response.body.message).toBe('Hello from CI/CD Lab! - v2');
 });
 
 test('GET /health returns healthy status', async () => {
